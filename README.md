@@ -12,19 +12,21 @@ All logos are served via jsDelivr and are available immediately after any commit
 
 **SVG (recommended — crisp at any size)**
 ```
-https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/{slug}.svg
+https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos/{slug}.svg
 ```
 
 **PNG**
 ```
-https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/{slug}.png
+https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos/{slug}.png
 ```
 
 **Example**
 ```
-https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/hdfc.svg
-https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/sbi.png
+https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos/hdfc.svg
+https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos/sbi.png
 ```
+
+> Always use `@latest` instead of `@main` in your URLs. jsDelivr caches `@main` aggressively and updated logos may not reflect for up to 24 hours. `@latest` always serves the most recent pushed version immediately. If you ever need to force a cache clear for a specific file, use the purge tool at https://www.jsdelivr.com/tools/purge.
 
 ---
 
@@ -32,14 +34,14 @@ https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/sbi.png
 
 **React**
 ```tsx
-const CDN = "https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos";
+const CDN = "https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos";
 
 <img src={`${CDN}/hdfc.svg`} alt="HDFC Bank" width={120} />
 ```
 
 **HTML**
 ```html
-<img src="https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@main/logos/sbi.svg" alt="SBI" width="120" />
+<img src="https://cdn.jsdelivr.net/gh/keyushhh/indian-bank-logos@latest/logos/sbi.svg" alt="SBI" width="120" />
 ```
 
 ---
